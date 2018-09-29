@@ -210,12 +210,12 @@ const unsigned ins_successmsg_icon[NDLESS_MAX_OSID+1] =
 					 0x172, 0x172,
 					 0x172, 0x172};
 
-void ins_install_successmsg_hook(void) {
-	if(ins_successmsg_hook_addrs[ut_os_version_index] == 0)
-		return;
+//void ins_install_successmsg_hook(void) {
+//	if(ins_successmsg_hook_addrs[ut_os_version_index] == 0)
+//		return;
 
-	HOOK_INSTALL(ins_successmsg_hook_addrs[ut_os_version_index], ins_successsuccessmsg_hook);
-}
+//	HOOK_INSTALL(ins_successmsg_hook_addrs[ut_os_version_index], ins_successsuccessmsg_hook);
+//}
 
 // chained after the startup programs execution
 HOOK_DEFINE(ins_successsuccessmsg_hook) {
